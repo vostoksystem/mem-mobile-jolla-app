@@ -1,0 +1,8 @@
+rayon 1.5
+pointe 2
+dureté 0.9
+proportion 1.0
+angle 0
+espacement 20
+
+clair à 60%

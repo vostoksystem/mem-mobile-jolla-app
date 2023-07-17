@@ -1,0 +1,125 @@
+**pour la memoire :
+/proc/meminfo
+MemTotal:         830728 kB
+MemFree:           13240 kB
+Buffers:            6484 kB
+Cached:           300944 kB
+SwapCached:            0 kB
+Active:           266844 kB
+Inactive:         287152 kB
+Active(anon):     176892 kB
+Inactive(anon):   198056 kB
+Active(file):      89952 kB
+Inactive(file):    89096 kB
+Unevictable:       70036 kB
+Mlocked:           70036 kB
+HighTotal:        157696 kB
+HighFree:            572 kB
+LowTotal:         673032 kB
+LowFree:           12668 kB
+SwapTotal:        520180 kB
+SwapFree:         520088 kB
+Dirty:                28 kB
+Writeback:             0 kB
+AnonPages:        316648 kB
+Mapped:           205240 kB
+Shmem:             58812 kB
+Slab:              35300 kB
+SReclaimable:      15756 kB
+SUnreclaim:        19544 kB
+KernelStack:        5480 kB
+PageTables:        13640 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      935544 kB
+Committed_AS:    5113916 kB
+VmallocTotal:     245760 kB
+VmallocUsed:       51356 kB
+VmallocChunk:      73644 kB
+
+
+** pour les espaces disques
+parse la sortie d'un df
+Filesystem           1K-blocks      Used Available Use% Mounted on
+rootfs                14415852   3828196  10008636  28% /
+/dev/mmcblk0p28       14415852   3828196  10008636  28% /
+devtmpfs                414720        64    414656   1% /dev
+tmpfs                   415364       224    415140   1% /dev/shm
+tmpfs                   415364     62692    352672  16% /run
+tmpfs                   415364         0    415364   0% /sys/fs/cgroup
+tmpfs                   415364        20    415344   1% /tmp
+/dev/mmcblk0p19           8048      4136      3912  52% /drm
+/dev/mmcblk0p18          65488     45408     20080  70% /firmware
+/dev/mmcblk0p25           8048      4236      3812  53% /persist
+/dev/mmcblk0p28       14415852   3828196  10008636  28% /home
+/dev/mmcblk0p9           48368     10276     38092  22% /var/systemlog
+tmpfs                   415364         0    415364   0% /mnt/asec
+tmpfs                   415364         0    415364   0% /mnt/obb
+/dev/fuse             14415852   3828196  10008636  28% /home/nemo/android_storage
+/dev/mmcblk1p1        31147632  19850240  11297392  64% /media/sdcard/1E24-8DFF
+
+recherche la premiere ligne qui et == "/" -> le root / interne
+recherche la ligne qui contien /media/sdcard -> la sd
+
+
+
+** pour le pros
+cat /proc/stat
+cpu  111912 2213 161765 1972328 30510 6 143 0 0 0
+
+e.g. Suppose at 14:00:00 you have
+
+    cpu 4698 591 262 8953 916 449 531
+
+    total_jiffies_1 = (sum of all values) = 16400
+
+    work_jiffies_1 = (sum of user,nice,system = the first 3 values) = 5551
+
+and at 14:00:05 you have
+
+    cpu 4739 591 289 9961 936 449 541
+
+    total_jiffies_2 = 17506
+
+    work_jiffies_2 = 5619
+
+So the %cpu usage over this period is:
+
+    work_over_period = work_jiffies_2 - work_jiffies_1 = 68
+
+    total_over_period = total_jiffies_2 - total_jiffies_1 = 1106
+
+    %cpu = work_over_period / total_over_period * 100 = 6.1%
+
+*** ou
+cat loadavg
+0.01 0.07 0.45 1/652 15277
+
+
+trouver par type de fichier
+find . -regex '.*\.\(jpg\|flv\)' -print0 2>/dev/null | du --files0-from=- -ch | tail -1
+find . -regex '.*\.\(jpg\|flv\)'
+
+find . -regex '.*\.\(avi\|mpg\|mpeg\|mkv\|mov\|wmv\|flv\|mp4\)' -print0 2>/dev/null | du --files0-from=- -ch | tail -1
+
+
+########################################################
+
+
+ps  --sort=-rss  -eo pid=,%mem=,rss=,vsz=,euser=,cmd= | grep -v 0\\.0
+
+
+29/09 00:30 630/681(51) - 0.925
+29/09 15:10 702/757(55) - 0.927
+29/09 18:50 728/784(56) - 0.9285 56
+29/09 22:40 758/816(58) - 0.9289 60
+30/09 11:30 806/864(58) - 0.9328 62 14
+30/09 19:15 842/902(60) - 0.933  67 15
+01/10 02:45 878/941(63) - 0.933  75 
+01/10 10:40 904/970(66) - 0.931  79
+01/10 17:00 934/1000(66) - 0.934 82 16
+02/10 01:00 963/1034(69) - 0.931 83
+02/10 12:45 995/1065(70) - 0.934 
+04/10 00:25 1087/1161(74) - 0.936 85
+13/10 19:15 1380/1486 (106) - 0.928 93 17

@@ -1,0 +1,39 @@
+method return sender=:1.5 -> dest=:1.448 reply_serial=25
+   string "ambience"
+method call sender=:1.448 -> dest=com.nokia.profiled serial=26 path=/com/nokia/profiled; interface=com.nokia.profiled; member=get_value
+   string "ambience"
+   string "touchscreen.vibration.level"
+method return sender=:1.5 -> dest=:1.448 reply_serial=26
+   string "0"
+method call sender=:1.448 -> dest=org.maliit.server serial=27 path=/org/maliit/server/address; interface=org.freedesktop.DBus.Properties; member=Get
+
+   string "org.maliit.Server.Address"
+   string "address"
+method return sender=:1.41 -> dest=:1.448 reply_serial=27
+   variant       string "unix:abstract=/tmp/maliit-server/dbus-Qi028Z9RKx,guid=2c6ba1fc70715785a51f2e1854982ac0"
+method call sender=:1.436 -> dest=org.freedesktop.Notifications serial=36 path=/org/freedesktop/Notifications; interface=org.freedesktop.Notifications; member=Notify
+   string "jolla-clock"
+   uint32 0
+   string ""
+   string ""
+   string ""
+   array [
+      string "default"
+      string ""
+   ]
+   array [
+      dict entry(
+         string "x-nemo-preview-body"
+         variant             string "Expiration dans 2 jours, 7 heures, 20 minutes"
+      )
+      dict entry(
+         string "category"
+         variant             string "x-jolla.settings.clock"
+      )
+   ]
+   int32 -1
+method return sender=:1.26 -> dest=:1.436 reply_serial=36
+   uint32 870
+signal sender=:1.26 -> dest=(null destination) serial=663 path=/org/freedesktop/Notifications; interface=org.freedesktop.Notifications; member=NotificationClosed
+   uint32 870
+   uint32 3

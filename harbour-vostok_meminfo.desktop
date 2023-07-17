@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=harbour-vostok_meminfo
+Exec=harbour-vostok_meminfo
+Name=Mem
+
+[X-Sailjail]
+Permissions=Documents;Downloads;MediaIndexing;Music;Pictures;PublicDir;RemovableMedia;UserDirs;WebView
+Sandboxing=Disabled
+OrganizationName=com.vostoksystem
+ApplicationName=Mem

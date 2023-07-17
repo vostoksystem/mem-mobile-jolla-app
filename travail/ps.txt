@@ -1,0 +1,246 @@
+ 
+[nemo@Jolla ~]$ ps --sort=-rss -eo pid=,%mem=,size=,pcpu=,rss=,vsz=,euser=,cmd=
+29413 27.5 175528 84.7 228972 485284 10022  com.redbull.airrace
+ 1205  9.7 86992  0.1 80752 218804 nemo     /usr/bin/lipstick -plugin evdevtouch:/dev/input/event0:rotate=0 -plugin evdevkeyboard:k
+ 1272  8.2 63724  0.0 68680 378920 system   system_server
+ 2699  4.7 52464  0.0 39320 135860 nemo     /usr/bin/jolla-settings
+ 1827  4.3 31312  0.0 36152 321664 10009    com.android.systemui
+ 1393  4.2 44124  0.0 35704 123188 nemo     /usr/bin/voicecall-ui -prestart
+26027  4.0 46368  0.0 33420 120684 nemo     /usr/bin/jolla-calendar
+ 1943  3.2 21884  0.0 26648 306368 10000    android.process.acore
+28275  3.0 40704  0.0 25500 110720 nemo     /usr/bin/harbour-usb-switch
+ 1853  3.0 12536  0.0 25072 288716 10001    com.myriadgroup.home
+ 1232  2.9 42072  0.0 24632 102020 nemo     /usr/bin/msyncd
+ 1949  2.9 15480  0.0 24332 286180 10005    android.process.media
+ 1842  2.6 19556  0.0 22004 289812 radio    com.android.phone
+29021  2.5 30716  1.7 20784 107936 nemo     /usr/bin/store-client
+  173  2.5   816  0.0 20780 150272 root     /lib/systemd/systemd-journald
+ 1886  2.4 15052  0.0 20700 287620 10000    com.android.contacts
+ 1930  2.4 11288  0.0 20412 282044 10003    com.android.providers.calendar
+ 1787  2.3 11172  0.0 19864 281304 10002    com.myriadgroup.inputmethod.remote
+ 1052  2.3  5852  0.0 19428 273912 root     zygote ien/system/bin/alien-main -Xzygote /opt/alien/system/bin --zygote --start-system
+29176  2.1 28636  4.3 18216  93080 nemo     booster [silica-qt5]
+ 1385  2.1 27112  0.0 18144 132420 nemo     /usr/bin/maliit-server
+29187  1.8 19652  1.6 15224  68904 root     /usr/libexec/packagekitd
+ 1395  1.7 25760  0.0 14396  85720 nemo     booster [browser]
+ 1470  1.6 25368  0.0 13320  63100 nemo     /usr/libexec/tracker-store
+29178  1.4 12720  1.5 12108  53236 nemo     /usr/libexec/telepathy-gabble
+ 1388  1.3 14760  0.0 11092  84404 nemo     /usr/bin/contactsd
+ 1487  1.0 35204  0.0  8552  88424 nemo     /usr/libexec/tracker-extract
+ 1387  0.9 13076  0.0  7960  71496 nemo     /usr/bin/jolla-signon-ui
+ 1386  0.8  7716  0.0  7324  65456 nemo     /usr/bin/ambienced
+ 1252  0.8 10584  0.0  7304  76768 nemo     /usr/bin/commhistoryd
+29163  0.8  9244  1.4  7300  59988 nemo     /usr/lib/tumbler-1/tumblerd
+ 1490  0.8 32392  0.0  7100  83780 nemo     /usr/libexec/tracker-miner-fs
+ 1064  0.7 29260  0.0  6544  86656 nemo     /opt/alien/system/genv/bin/alien_bridge_server co
+ 1224  0.7  4860  0.0  6164  67028 nemo     /usr/bin/messageserver5
+ 1394  0.6  4228  0.0  5792  57516 nemo     /usr/bin/simkit
+26990  0.6 28244  0.0  5436  78120 root     /opt/alien/system/genv/bin/alien_bridge_server ms fo
+ 1201  0.5  7248  0.0  4952  44640 nemo     /usr/libexec/mission-control-5
+ 1225  0.5 18404  0.0  4952 234308 nemo     /usr/bin/pulseaudio --start -n --file=/etc/pulse/arm_qct_msm8930_cdp.pa
+ 1065  0.5 29008  0.0  4840  78756 root     /opt/alien/system/genv/bin/alien_bridge_server wi ri cn
+  838  0.5  3652  0.0  4716  50212 root     /usr/bin/odnpd
+29129  0.5  3696  0.1  4628  53840 nemo     /usr/lib/buteo-plugins-qt5//oopp/syncml-server syncml syncml
+  381  0.5  3888  0.0  4564  63880 root     /usr/sbin/apkd
+ 1217  0.5  1600  0.0  4544  66508 nemo     /usr/bin/voicecall-manager
+  835  0.5  4204  0.0  4524  48228 root     /usr/sbin/sensord -c=/etc/sensorfw/primaryuse.conf -d --log-level=warning --no-magnetom
+ 1233  0.5   908  0.0  4496  57628 nemo     /usr/bin/connectionagent
+ 1202  0.5  3872  0.0  4476  40884 nemo     /usr/libexec/telepathy-sasl-signon
+29181  0.5  3572  0.1  4384  43204 root     /usr/bin/ssud
+  510  0.5 42552  0.0  4352  82024 root     /usr/bin/statefs /run/state -f --system -o allow_other,gid=100
+ 1373  0.4   676  0.0  4096  57336 nemo     /usr/libexec/mapplauncherd/booster-silica-qt5 --systemd
+ 1061  0.4 36272  0.0  4016  77144 nemo     /opt/alien/system/genv/bin/aliensensorserver
+ 1374  0.4  2600  0.0  3836  55684 nemo     /usr/libexec/mapplauncherd/booster-browser --systemd
+ 1062  0.4 19792  0.0  3776  69540 root     /opt/alien/system/genv/bin/alien_bridge_server ap no li mc nc vi pm
+ 1140  0.4   892  0.0  3676  43048 nemo     /usr/bin/timed-qt5 --systemd
+ 1177  0.4 18436  0.0  3580  60560 nemo     /usr/bin/statefs /run/user/100000/state -f -o allow_other
+ 1055  0.4 52852  0.0  3464 163244 nemo     /opt/alien/system/genv/bin/alien_audio_server
+ 1067  0.4 18880  0.0  3464  61572 root     /opt/alien/system/genv/bin/alien_gps_server
+  404  0.4  3412  0.0  3436  11764 root     /usr/sbin/ohmd --no-daemon
+ 2015  0.4 19756  0.0  3340  58880 root     /opt/alien/system/genv/bin/alien_keyboard_server
+  780  0.3  7612  0.0  2992  14504 root     /usr/libexec/upowerd
+ 1204  0.3  4212  0.0  2968  82344 nemo     /usr/bin/ngfd
+ 1206  0.3   648  0.0  2848  49060 nemo     /usr/libexec/mapplauncherd/booster-qt5 --systemd --boot-mode
+  393  0.3  5620  0.1  2720  13404 root     /usr/sbin/mce --systemd
+  821  0.3  9788  0.0  2664  15780 root     /usr/libexec/polkit-1/polkitd --no-debug
+29220  0.3  1448  0.2  2592   9216 root     sshd: nemo [priv]
+ 1151  0.3  1800  0.0  2536   4268 nemo     /bin/dbus-daemon --session --address=systemd: --nofork --systemd-activation
+    1  0.2  1232  0.0  2480   5000 root     /lib/systemd/systemd --unit=default.target
+  496  0.2  1608  0.0  2368   4076 dbus     /bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+ 1307  0.2  6716  0.0  2224  12152 nemo     /usr/libexec/dconf-service
+  794  0.2   488  0.0  2212   6404 root     /usr/sbin/connmand -n --nobacktrace --systemd
+ 1102  0.2   872  0.0  1984   4512 nemo     /lib/systemd/systemd --user --unit=default.target
+  938  0.2   324  0.0  1908   5876 root     /usr/sbin/wpa_supplicant -u -c /etc/wpa_supplicant/wpa_supplicant.conf -O/var/run/wpa_s
+ 1060  0.2  5992  0.0  1908  23104 media    /opt/alien/system/bin/mediaserver
+  703  0.2  8564  0.0  1892  16380 radio    /system/bin/rild
+ 1236  0.2   464  0.0  1892   8368 nemo     /usr/libexec/telepathy-ring
+  679  0.2   304  0.0  1888   2092 root     /usr/sbin/dsme -p /usr/lib/dsme/libstartup.so --systemd
+  826  0.2   456  0.0  1880   5140 radio    /usr/sbin/ofonod -n --nobacktrace --noplugin=he910,dun_gw_bluez5,hfp_bluez5,hfp_ag_blue
+  834  0.2  3392  0.0  1848   8780 root     /usr/bin/fastdormancyd
+ 2077  0.2  3572  0.0  1848  10856 root     /usr/sbin/pacrunner
+  680  0.2  3404  0.0  1836  10680 root     /usr/sbin/dsme-server -p /usr/lib/dsme/libstartup.so --systemd
+  785  0.2 20032  0.0  1792  27312 root     /usr/sbin/tohd
+ 1203  0.2   504  0.0  1768  76624 nemo     /usr/bin/tonegend -b 100 -r 20 --volume-dtmf 15 --tag-dtmf media.role=dtmf-tone --tag-i
+  431  0.2   336  0.0  1700   6628 root     /usr/sbin/usb_moded --systemd --force-syslog
+29241  0.2   444  0.2  1692   6196 nemo     -bash
+  849  0.1   436  0.0  1496   4536 root     /usr/sbin/bluetoothd -n
+ 1347  0.1   436  0.0  1472   4188 nemo     /usr/libexec/obexd --nodaemon --capability !/usr/bin/obex-capability --noplugin=ftp,irm
+29240  0.1  1448  0.0  1460   9216 nemo     sshd: nemo@pts/0
+ 1047  0.1  1500  0.0  1396   2012 media_rw /opt/alien/system/bin/sdcard /data/media 1023 1023
+ 1161  0.1   324  0.0  1392   6132 nemo     /usr/bin/profiled
+ 1071  0.1  2696  0.0  1324  14652 root     /opt/alien/system/bin/rild -l libalien_native_ril.so
+  800  0.1   424  0.0  1308   3068 root     /lib/systemd/systemd-logind
+  541  0.1  1776  0.0  1212  15108 camera   /system/bin/mm-qcamera-daemon
+ 1059  0.1 18852  0.0  1120  27744 nemo     /opt/alien/system/genv/bin/binder_resource_manager_service
+29498  0.1   908  6.0  1100   6012 nemo     ps --sort=-rss -eo pid=,%mem=,size=,pcpu=,rss=,vsz=,euser=,cmd=
+  205  0.1   556  0.0  1028   9096 root     /lib/systemd/systemd-udevd
+ 1124  0.1   324  0.0   940   6116 nemo     /usr/bin/ohm-session-agent
+ 1046  0.1   924  0.0   936   1520 log      /opt/alien/system/bin/alienlogd
+ 1053  0.1  1508  0.0   912   6540 drm      /opt/alien/system/bin/drmserver
+29198  0.0   648  0.0   792  49060 nemo     booster [qt5]
+ 1199  0.0   332  0.0   748   3752 nemo     /usr/libexec/mapplauncherd/booster-generic --systemd
+  707  0.0 21576  0.0   592  22988 root     /system/bin/thermald
+ 1571  0.0  1444  0.0   508   3064 system   /system/bin/mm-pp-daemon
+  756  0.0 10408  0.0   476  11716 radio    /system/bin/qmuxd
+29070  0.0   296  0.0   472   1812 root     /usr/sbin/udhcpd -f
+  762  0.0  6388  0.0   424   7812 radio    /system/bin/netmgrd
+  725  0.0  6544  0.0   404   7724 9999     /system/bin/rmt_storage
+ 1011  0.0   332  0.0   368    944 root     /opt/alien/system/bin/alien_init
+ 1641  0.0  5516  0.1   344   6664 root     /system/bin/mpdecision --no_sleep --avg_comp
+ 1050  0.0   340  0.0   336    952 root     /opt/alien/system/bin/installd
+ 1074  0.0  1252  0.0   324   5828 nemo     (sd-pam)
+ 1048  0.0   272  0.0   300    932 system   /opt/alien/system/bin/servicemanager
+ 1103  0.0  1252  0.0   292   5560 nemo     (sd-pam)
+ 2925  0.0   296  0.0   256   1824 nemo     invoker --single-instance --type=silica-qt5 /usr/bin/jolla-settings
+29016  0.0   296  0.0   256   1824 nemo     invoker --type=silica-qt5 --single-instance harbour-usb-switch
+ 1270  0.0   296  0.0   252   1824 nemo     /usr/bin/invoker --type=generic /usr/libexec/telepathy-sasl-signon
+ 1370  0.0   296  0.0   252   1824 nemo     /usr/bin/invoker -o -s --type=qt5 /usr/bin/ambienced
+ 1372  0.0   296  0.0   252   1824 nemo     /usr/bin/invoker --type=qt5 /usr/bin/maliit-server
+ 1381  0.0   296  0.0   252   1824 nemo     /usr/bin/invoker -o --type=qt5 /usr/bin/commhistoryd
+ 1383  0.0   296  0.0   252   1824 nemo     /usr/bin/invoker -o -s --type=qt5 /usr/bin/jolla-signon-ui
+ 1399  0.0   296  0.0   252   1824 nemo     /usr/bin/invoker -o -s --type=silica-qt5 /usr/bin/voicecall-ui -prestart
+ 1471  0.0   296  0.0   252   1824 nemo     /usr/bin/invoker -o -s --global-syms --type=qt5 /usr/bin/contactsd
+ 1018  0.0   160  0.0   216   1676 nemo     /usr/lib/startup/autologind
+ 1218  0.0   296  0.0   204   1824 nemo     /usr/bin/invoker -o --type=qt5 /usr/bin/voicecall-manager
+ 1221  0.0   296  0.0   204   1824 nemo     /usr/bin/invoker -o --type=qt5 /usr/bin/connectionagent
+ 1226  0.0   296  0.0   204   1824 nemo     /usr/bin/invoker -o --type=qt5 --global-syms /usr/bin/messageserver5
+ 1227  0.0   296  0.0   204   1824 nemo     /usr/bin/invoker -G -o -s --type=qt5 /usr/bin/msyncd
+ 1049  0.0   376  0.0   184   1880 root     /opt/alien/system/bin/keystore /data/keystore
+ 1271  0.0   332  0.0   164   3752 nemo     booster [generic]
+  377  0.0   232  0.0   152    408 root     /sbin/droid-hal-init
+  542  0.0  1040  0.0   140   2228 system   /system/bin/qseecomd
+  556  0.0  3092  0.0   140   4288 system   /system/bin/qseecomd
+  536  0.0  1352  0.0   128   2264 system   /system/bin/sensord
+  539  0.0  3104  0.0   108   4040 system   /system/bin/ssr_diag
+ 1054  0.0   344  0.0    96    988 root     /opt/alien/system/bin/debuggerd
+    2  0.0     0  0.0     0      0 root     [kthreadd]
+    3  0.0     0  0.0     0      0 root     [ksoftirqd/0]
+    6  0.0     0  0.0     0      0 root     [migration/0]
+   10  0.0     0  0.0     0      0 root     [khelper]
+   11  0.0     0  0.0     0      0 root     [kdevtmpfs]
+   12  0.0     0  0.0     0      0 root     [suspend_sys_syn]
+   13  0.0     0  0.0     0      0 root     [suspend]
+   15  0.0     0  0.0     0      0 root     [irq/203-msmdata]
+   16  0.0     0  0.0     0      0 root     [sync_supers]
+   17  0.0     0  0.0     0      0 root     [bdi-default]
+   18  0.0     0  0.0     0      0 root     [crypto]
+   19  0.0     0  0.0     0      0 root     [kblockd]
+   20  0.0     0  0.0     0      0 root     [khubd]
+   21  0.0     0  0.0     0      0 root     [irq/84-msm_iomm]
+   22  0.0     0  0.0     0      0 root     [irq/84-msm_iomm]
+   23  0.0     0  0.0     0      0 root     [irq/96-msm_iomm]
+   24  0.0     0  0.0     0      0 root     [irq/96-msm_iomm]
+   25  0.0     0  0.0     0      0 root     [irq/94-msm_iomm]
+   26  0.0     0  0.0     0      0 root     [irq/94-msm_iomm]
+   27  0.0     0  0.0     0      0 root     [irq/92-msm_iomm]
+   28  0.0     0  0.0     0      0 root     [irq/92-msm_iomm]
+   29  0.0     0  0.0     0      0 root     [irq/100-msm_iom]
+   30  0.0     0  0.0     0      0 root     [irq/100-msm_iom]
+   31  0.0     0  0.0     0      0 root     [irq/86-msm_iomm]
+   32  0.0     0  0.0     0      0 root     [irq/86-msm_iomm]
+   33  0.0     0  0.0     0      0 root     [irq/90-msm_iomm]
+   34  0.0     0  0.0     0      0 root     [irq/90-msm_iomm]
+   35  0.0     0  0.0     0      0 root     [irq/88-msm_iomm]
+   36  0.0     0  0.0     0      0 root     [irq/102-msm_iom]
+   37  0.0     0  0.0     0      0 root     [irq/102-msm_iom]
+   38  0.0     0  0.0     0      0 root     [l2cap]
+   39  0.0     0  0.0     0      0 root     [a2mp]
+   40  0.0     0  0.0     0      0 root     [modem_notifier]
+   41  0.0     0  0.0     0      0 root     [smd_channel_clo]
+   42  0.0     0  0.0     0      0 root     [smsm_cb_wq]
+   45  0.0     0  0.0     0      0 root     [qmi]
+   46  0.0     0  0.0     0      0 root     [nmea]
+   47  0.0     0  0.0     0      0 root     [msm_ipc_router]
+   48  0.0     0  0.0     0      0 root     [apr_driver]
+   49  0.0     0  0.0     0      0 root     [kswapd0]
+   50  0.0     0  0.0     0      0 root     [ksmd]
+   51  0.0     0  0.0     0      0 root     [fsnotify_mark]
+   65  0.0     0  0.0     0      0 root     [mdp_dma_wq]
+   66  0.0     0  0.0     0      0 root     [mdp_vsync_wq]
+   67  0.0     0  0.0     0      0 root     [mdp_pipe_ctrl_w]
+   68  0.0     0  0.0     0      0 root     [mdp_cursor_ctrl]
+   69  0.0     0  0.0     0      0 root     [lcm_recovery_wq]
+   70  0.0     0  0.0     0      0 root     [vidc_worker_que]
+   71  0.0     0  0.0     0      0 root     [vidc_timer_wq]
+   72  0.0     0  0.0     0      0 root     [diag_wq]
+   73  0.0     0  0.0     0      0 root     [diag_cntl_wq]
+   74  0.0     0  0.0     0      0 root     [diag_bridge_wq]
+   75  0.0     0  0.0     0      0 root     [kgsl-3d0]
+   82  0.0     0  0.0     0      0 root     [usbnet]
+   83  0.0     0  0.0     0      0 root     [mdm_bridge]
+   84  0.0     0  0.0     0      0 root     [ks_bridge:1]
+   85  0.0     0  0.0     0      0 root     [ks_bridge:2]
+   86  0.0     0  0.0     0      0 root     [ftdsd]
+   87  0.0     0  0.0     0      0 root     [k_rmnet_mux_wor]
+   88  0.0     0  0.0     0      0 root     [f_mtp]
+   89  0.0     0  0.0     0      0 root     [file-storage]
+   90  0.0     0  0.0     0      0 root     [uether]
+   92  0.0     0  0.0     0      0 root     [irq/299-synapti]
+   93  0.0     0  0.0     0      0 root     [irq/331-toh-eve]
+   95  0.0     0  0.0     0      0 root     [iewq]
+   96  0.0     0  0.0     0      0 root     [kinteractiveup]
+   97  0.0     0  0.0     0      0 root     [irq/382-msm-sdc]
+   98  0.0     0  0.0     0      0 root     [binder]
+   99  0.0     0  0.0     0      0 root     [keventd]
+  100  0.0     0  0.0     0      0 root     [krfcommd]
+  101  0.0     0  0.0     0      0 root     [bam_dmux_rx]
+  102  0.0     0  0.0     0      0 root     [bam_dmux_tx]
+  103  0.0     0  0.0     0      0 root     [rq_stats]
+  104  0.0     0  0.0     0      0 root     [deferwq]
+  106  0.0     0  0.0     0      0 root     [msm_slim_ctrl_r]
+  107  0.0     0  0.0     0      0 root     [sb-1]
+  109  0.0     0  0.0     0      0 root     [mmcqd/0]
+  110  0.0     0  0.0     0      0 root     [irq/350-wcd9xxx]
+  111  0.0     0  0.0     0      0 root     [mmcqd/1]
+  112  0.0     0  0.0     0      0 root     [irq/325-sitar-h]
+  113  0.0     0  0.0     0      0 root     [l3gd20_gyr_work]
+  114  0.0     0  0.0     0      0 root     [irq/337-12-0039]
+  125  0.0     0  0.0     0      0 root     [btrfs-genwork-1]
+  126  0.0     0  0.0     0      0 root     [btrfs-submit-1]
+  127  0.0     0  0.0     0      0 root     [btrfs-delalloc-]
+  128  0.0     0  0.0     0      0 root     [btrfs-fixup-1]
+  129  0.0     0  0.0     0      0 root     [btrfs-endio-1]
+  131  0.0     0  0.0     0      0 root     [btrfs-endio-met]
+  133  0.0     0  0.0     0      0 root     [btrfs-freespace]
+  135  0.0     0  0.0     0      0 root     [btrfs-cache-1]
+  136  0.0     0  0.0     0      0 root     [btrfs-readahead]
+
+
+com.redbull.airrace
+
+
+[nemo@Jolla applications]$ cat apkd_launcher_com_redbull_airrace-com_unity3d_player_UnityPlayerNativeActivity.desktop
+[Desktop Entry]
+Exec=apkd-launcher /data/app/com.redbull.airrace-1.apk com.redbull.airrace/com.unity3d.player.UnityPlayerNativeActivity
+Icon=/var/lib/apkd/apkd_launcher_com_redbull_airrace-com_unity3d_player_UnityPlayerNativeActivity.png
+Name=AIR RACE
+Type=Application
+Version=1.0
+X-Nemo-Application-Type=no-invoker
+X-Nemo-Single-Instance=no
+X-apkd-apkfile=/data/app/com.redbull.airrace-1.apk
+
+
+/usr/share/icons/hicolor/86x86/apps/
+
+

@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/img">
+        <file alias="logo">resources/img/logo.png</file>
+        <file alias="phone">resources/img/phone.png</file>
+        <file alias="precedent">resources/img/precedent.png</file>
+        <file alias="ram">resources/img/ram.png</file>
+        <file alias="sdcard">resources/img/sdcard.png</file>
+        <file alias="suivant">resources/img/suivant.png</file>
+        <file alias="cpu">resources/img/atom.png</file>
+  </qresource>
+</RCC>

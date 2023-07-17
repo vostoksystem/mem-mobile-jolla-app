@@ -1,0 +1,9 @@
+ 
+
+A faire :
+- nettoyage ficher temp & trash
+- taille utilisé par chaque application, listes des fichiers --> systeme / data/tmp
+
+- collecter des stat de l'utilisation memoire : interne/sdcard/memoire/process(??)/batterie)
+
+- afficher la barre de process ???

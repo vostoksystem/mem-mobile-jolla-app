@@ -1,0 +1,63 @@
+* Fri Mar 25 2022 0.18
+- build app to comply with sailfish 4.4.0.58
+
+* Mon May 10 2021 0.17.21
+- Fix broken process list since sailfish Os 4.0 upgrade
+- added shared memory information on process list
+- Fix broken backup system
+- Fixed graphics on the file usages not dispaying sometime
+
+* Wed Aug 14 2019 0.13.2
+- Fix : Updated memory report because of another change in OS3.10.11
+- updated domain & email to vostoksystem.com
+
+* Thu May 05 2019 0.12.1
+- Fix : change in sailfish 3.0.3.8 partition names made mem! crash
+
+* Thu Jun 21 2018 0.11.3
+- Fix sdcard detection since sailfish update 2.2.21
+
+* Mon Oct 16 2017 0.11.1
+- Fix cover icon for root partition
+
+* Sat Oct 14 2017 0.10.2
+- Fix icon issue on SailfishX / Xperia
+- Fix in translation
+
+* Fri Sep 08 2017 0.9.4
+- fixed system data stat on Jolla 1
+- fixed issu on some application icon on Jolla 1
+- Add My application panel, with stat, backup, restore and clear cache
+
+* Mon Aug 14 2017 0.8.12
+- new name, now it's Mem!
+- move to a new internal api to prepare futur change
+- move all pages to new api
+- new process list with live status update
+- can order process by memory, cpu or name
+- bug : correction for detection of empty sdcard
+- new : added system data
+- new : added sdcard filesystem type
+- new diagram for the stat
+
+* Mon Oct 03 2016 0.6.3
+- bug : bug in partition detection making jolla C reporting system instead of user space
+- bug : changed sdcard detection algorithm (jolla C)
+- new : changed main layout
+- new : added some hint
+- new : on process list, press open context menu
+
+* Sat Jan 10 2015 0.4.8 (public)
+- Options panel added
+- Custom colour list for pie chart
+- Custom media type filter added
+- List of running processes with memory, type and a kill option (for jolla process)
+- Options for skipping android storage from stat
+- fix bug on bad info refreshing when application state change
+
+* Sat Nov 29 2014 0.4.2 (internal)
+- new scanning loop in order to reduce loading time ; from 2 to 4 times faster
+
+* Sun Sep 28 2014   0.3.1 (public)
+- Rebuild scanning process to handle app lock issue causing app not responding
+- Include flac to music group
